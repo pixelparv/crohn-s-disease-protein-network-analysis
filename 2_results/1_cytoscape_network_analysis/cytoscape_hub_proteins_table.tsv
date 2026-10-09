@@ -1,0 +1,17 @@
+Rank	Protein	Tier	Degree	Betweenness Centrality	Stress	Closeness Centrality	Degree Hub	BC Hub	Stress Hub	Metrics Met	KEGG Pathway Hub	Cross-Method Validated	Notes
+1	IL6	1 - Triple metric	70	1.1642	47903	0.8750	YES	YES	YES	3/3	YES	YES	Top-ranked hub; 6/8 KEGG pathways; JAK-STAT and cytokine signalling central
+2	STAT1	1 - Triple metric	64	0.3437	12911	1.0000	YES	YES	YES	3/3	YES	YES	Closeness = 1.0; 6/8 KEGG pathways; IFN signalling master regulator
+3	STAT3	1 - Triple metric	65	0.3003	12358	1.0000	YES	YES	YES	3/3	NO	NO	Closeness = 1.0; JAK-STAT central node; co-activates with STAT1
+4	JAK1	1 - Triple metric	65	0.3771	12651	0.6667	YES	YES	YES	3/3	YES	NO	JAK-STAT signalling kinase; secondary KEGG hub
+5	IL4	1 - Triple metric	61	0.4103	21167	0.7812	YES	YES	YES	3/3	NO	NO	Th2 cytokine; IL-4/IL-13 axis; previously omitted - confirmed by all 3 metrics
+6	IFNG	2 - Dual metric	68	0.1570	13996	0.8857	YES	NO	YES	2/3	NO	NO	IFN-gamma; Th1 effector cytokine; high degree and stress
+7	IL13	2 - Dual metric	59	0.1748	15902	0.8214	YES	NO	YES	2/3	NO	NO	IL-4/IL-13 axis partner; Th2 effector cytokine
+8	IL22	2 - Dual metric	57	0.1989	16385	0.7660	YES	NO	YES	2/3	NO	NO	Mucosal immunity; IL-10 family; epithelial barrier regulation
+9	IL10	2 - Dual metric	63	0.1413	14668	0.8571	YES	NO	YES	2/3	NO	NO	Anti-inflammatory master regulator; high degree and stress
+10	IFNB1	2 - Dual metric	62	0.1222	11808	0.8214	YES	NO	YES	2/3	NO	NO	Type I interferon; innate-adaptive bridge
+11	NOD2	2 - Dual metric	34	0.4999	19271	0.7500	NO	YES	YES	2/3	NO	NO	Primary CD-associated gene; high bottleneck (BC) despite moderate degree; pathogen sensing
+12	IL18	2 - Dual metric	47	0.2694	12441	0.7000	NO	YES	YES	2/3	NO	NO	Inflammasome product; high BC indicates bridging role between modules
+13	IL10RA	2 - Dual metric	57	0.1068	13191	0.7761	YES	NO	YES	2/3	NO	NO	IL-10 receptor alpha; anti-inflammatory signalling conduit
+14	RELA	3 - KEGG pathway only	26	0.0798	3878	0.7778	NO	NO	NO	0/3	YES	NO	NF-κB subunit; regulatory/modulatory hub; below all topology thresholds
+15	IL12B	3 - KEGG pathway only	42	0.0567	6149	0.7000	NO	NO	NO	0/3	YES	NO	IL-12p40; Th1 polarisation; pathway crosstalk hub not topologically prominent
+16	TYK2	ANOMALY - verify	59	0.0000	0	0.0000	YES*	-	-	ANOMALY	YES	-	Degree=59 qualifies but BC/CC/Stress all zero - likely topological sink; verify edge directionality in Cytoscape
