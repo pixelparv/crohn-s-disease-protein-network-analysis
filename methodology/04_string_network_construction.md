@@ -17,7 +17,7 @@ The 77 identifiers submitted to STRING comprised the 13 primary candidate protei
 | Input identifiers | 77 |
 | Minimum interaction confidence | 0.400 |
 | Network type | Full STRING network (physical and functional associations) |
-| Network expansion | None beyond submitted identifiers (Option 1 selected) |
+| Network expansion | Iterative node addition via STRING "more" option until 125 proteins reached |
 | FDR setting | 5% (see note below) |
 | Export format | Two `.tsv` files — node table and edge table |
 | Retrieval date | 16 June 2026 |
@@ -34,7 +34,11 @@ The 77 identifiers submitted to STRING comprised the 13 primary candidate protei
 | Edges | 1,621 |
 | Connected primary genes | 12 of 13 |
 
-The gene SIAE was absent from the connected output in the initial network.
+The gene SIAE remained absent from the connected output after iterative node addition; it did not connect in the extended network.
+
+## Note on iterative node addition
+
+Starting from the 77 submitted identifiers, STRING initially connected a subset. Additional proteins were added iteratively using STRING's "more" option to bridge gaps in the network until 125 proteins were reached. Proteins in the extended network beyond the original 77 inputs are STRING-added bridge nodes; they are visually distinct from the query proteins in the STRING interface (query proteins and their first-layer interactors shown in red; second-layer added nodes shown in white).
 
 ## Note on output count versus Cytoscape node count
 
@@ -49,6 +53,7 @@ STRING edges represent protein associations that may combine evidence from co-ex
 
 - [ ] Record the 77 exact query identifiers and confirm their derivation
       (13 primary genes + unique IntAct partners).
+- [ ] Document the iterative node addition steps: number of additions, identities of added nodes, and the stopping criterion (125 proteins reached).
 - [ ] Record retrieval date and STRING version (v12.0).
 - [ ] Document all active evidence channels.
 - [ ] Confirm what the 5% FDR setting was applied to.
