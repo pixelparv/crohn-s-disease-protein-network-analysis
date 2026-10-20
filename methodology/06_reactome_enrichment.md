@@ -11,7 +11,7 @@ Identify pathways statistically over-represented among the submitted network pro
 | Organism | *Homo sapiens* |
 | Analysis date | 17 June 2026 |
 | Reactome version | 96 |
-| Submitted identifiers | 110 (UniProt and Ensembl accessions corresponding to the Cytoscape network nodes) |
+| Submitted identifiers | 110 gene names (from the Cytoscape network node table) |
 | Mapped identifiers | 100 / 110 (90.9%) |
 | Mapped Reactome entities | 146 |
 | Pathways hit | 623 |
@@ -22,7 +22,7 @@ Identify pathways statistically over-represented among the submitted network pro
 
 ## Approach
 
-The 110 node identifiers exported from Cytoscape were submitted to the Reactome Pathway Knowledgebase over-representation analysis. Reactome mapped the submitted identifiers to internal entities and ranked enriched pathways by p-value and FDR-adjusted significance. The analysis summary examined the 25 most significantly enriched pathways.
+The 110 gene names from the Cytoscape network node table were submitted to the Reactome Pathway Knowledgebase over-representation analysis. Reactome mapped the submitted identifiers to internal entities and ranked enriched pathways by p-value and FDR-adjusted significance. The analysis summary examined the 25 most significantly enriched pathways.
 
 ## Key enriched pathways (top results)
 
