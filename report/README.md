@@ -11,7 +11,7 @@ The analysis was conducted to identify biological pathways statistically over-re
 - **Organism:** *Homo sapiens*
 - **Analysis Date:** 17 June 2026
 - **Reactome Version:** 96
-- **Submitted Identifiers:** 110 unique UniProt and Ensembl identifiers
+- **Submitted Identifiers:** 110 gene names (from the Cytoscape network node table)
 - **Mapped Identifiers:** 100/110 (90.9%)
 - **Mapped Reactome Entities:** 146
 - **Pathways Hit:** 623
