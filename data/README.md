@@ -15,7 +15,7 @@ Record the following for every data file that is added:
 
 ## Handling rules
 
-- Preserve raw exports separately from processed files.
+- Preserve raw exports separately from processed files as primary and secondary, respectively.
 - Do not silently overwrite source data.
 - Keep gene symbols, UniProt accessions, and protein identifiers clearly distinguished.
 - Do not commit private, licensed, or otherwise restricted data without permission.
