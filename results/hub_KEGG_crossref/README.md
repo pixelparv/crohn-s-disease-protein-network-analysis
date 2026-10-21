@@ -2,93 +2,79 @@
 
 ### Method
 
-Each hub protein was matched against the eight KEGG pathway maps used in crosstalk analysis. A hub protein was scored as present (✓) in a pathway if it appeared as a highlighted node in the corresponding KEGG Mapper output image.
+Each protein was cross-referenced against the eight KEGG pathway maps used in the crosstalk analysis. Presence (`✓`) indicates that the protein appeared as a highlighted node in the corresponding KEGG Mapper output.
 
-Pathway abbreviations: IBD = Inflammatory Bowel Disease (hsa05321); JAK-STAT = JAK-STAT Signaling Pathway (hsa04630); TLR = Toll-Like Receptor Signaling
-Pathway (hsa04620); NLR = NOD-Like Receptor Signaling Pathway (hsa04621); Th17 = Th17 Cell Differentiation (hsa04659); Th1/Th2 = Th1 and Th2 Cell
-Differentiation (hsa04658); Cyt-R = Cytokine-Cytokine Receptor Interaction (hsa04060); Auto = Autophagy – Animal (hsa04140).
+Pathway abbreviations: IBD = Inflammatory Bowel Disease (hsa05321); JAK-STAT = JAK-STAT Signaling Pathway (hsa04630); TLR = Toll-like Receptor Signaling Pathway (hsa04620); NLR = NOD-like Receptor Signaling Pathway (hsa04621); Th17 = Th17 Cell Differentiation (hsa04659); Th1/Th2 = Th1 and Th2 Cell Differentiation (hsa04658); Cyt-R = Cytokine-Cytokine Receptor Interaction (hsa04060); Auto = Autophagy – Animal (hsa04140).
 
-Hub proteins are proteins meeting topology ranking criteria (Degree, Betweenness Centrality, Stress Centrality) in Cytoscape network analysis: T1 = triple-metric (all three); T2 = dual-metric (two of three); Anomaly = high degree but unresolved zero-centrality metrics. RELA and IL12B did not meet topology hub criteria and are documented separately under **Pathway-prominent non-hub proteins** below.
+Tier labels follow the TSV: **Tier 1** = triple-metric topology candidates; **Tier 2** = dual-metric topology candidates; **Tier 3 – KEGG only** = pathway-mapped proteins not supported as topology-prominent hubs; **Anomaly – verify** = TYK2, whose high degree is accompanied by unresolved zero centrality metrics.
 
 ---
 
-### Hub × Pathway Presence Matrix
+### Protein × Pathway Presence Matrix
 
-| Hub | Tier | IBD | JAK-STAT | TLR | NLR | Th17 | Th1/Th2 | Cyt-R | Auto | Count |
+| Protein | Tier | IBD | JAK-STAT | TLR | NLR | Th17 | Th1/Th2 | Cyt-R | Auto | Count |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **IL6** | T1 | ✓ | ✓ | ✓ | ✓ | ✓ | — | ✓ | — | **6** |
-| **STAT1** | T1 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | **6** |
-| **STAT3** | T1 | ✓ | ✓ | — | — | ✓ | — | — | — | **3** |
-| **JAK1** | T1 | — | ✓ | ✓ | ✓ | — | ✓ | — | — | **4** |
-| **IL4** | T1 | ✓ | — | — | — | ✓ | ✓ | ✓ | — | **4** |
-| **IFNG** | T2 | ✓ | ✓ | — | — | ✓ | ✓ | ✓ | — | **5** |
-| **IL13** | T2 | ✓ | — | — | — | — | ✓ | ✓ | — | **3** |
-| **IL22** | T2 | — | — | — | — | ✓ | — | ✓ | — | **2** |
-| **IL10** | T2 | ✓ | ✓ | — | — | — | — | ✓ | — | **3** |
-| **IFNB1** | T2 | — | ✓ | ✓ | ✓ | — | — | ✓ | — | **4** |
-| **NOD2** | T2 | ✓ | — | — | ✓ | — | — | — | — | **2** |
-| **IL18** | T2 | ✓ | — | — | ✓ | — | — | ✓ | — | **3** |
-| **IL10RA** | T2 | — | — | — | — | — | — | ✓ | — | **1** |
-| **TYK2** | Anomaly | — | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | **5** |
+| **IL6** | Tier 1 – Triple metric | ✓ | ✓ | ✓ | ✓ | ✓ | — | ✓ | — | **6** |
+| **STAT1** | Tier 1 – Triple metric | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | **6** |
+| **STAT3** | Tier 1 – Triple metric | ✓ | ✓ | — | — | ✓ | — | — | — | **3** |
+| **JAK1** | Tier 1 – Triple metric | — | ✓ | ✓ | ✓ | — | ✓ | — | — | **4** |
+| **IL4** | Tier 1 – Triple metric | ✓ | — | — | — | ✓ | ✓ | ✓ | — | **4** |
+| **IFNG** | Tier 2 – Dual metric | ✓ | ✓ | — | — | ✓ | ✓ | ✓ | — | **5** |
+| **IL13** | Tier 2 – Dual metric | ✓ | — | — | — | — | ✓ | ✓ | — | **3** |
+| **IL22** | Tier 2 – Dual metric | — | — | — | — | ✓ | — | ✓ | — | **2** |
+| **IL10** | Tier 2 – Dual metric | ✓ | ✓ | — | — | — | — | ✓ | — | **3** |
+| **IFNB1** | Tier 2 – Dual metric | — | ✓ | ✓ | ✓ | — | — | ✓ | — | **4** |
+| **NOD2** | Tier 2 – Dual metric | ✓ | — | — | ✓ | — | — | — | — | **2** |
+| **IL18** | Tier 2 – Dual metric | ✓ | — | — | ✓ | — | — | ✓ | — | **3** |
+| **IL10RA** | Tier 2 – Dual metric | — | — | — | — | — | — | ✓ | — | **1** |
+| **RELA** | Tier 3 – KEGG only | ✓ | — | ✓ | ✓ | ✓ | ✓ | — | — | **5** |
+| **IL12B** | Tier 3 – KEGG only | ✓ | — | ✓ | — | — | ✓ | — | — | **3** |
+| **TYK2** | Anomaly – verify | — | ✓ | ✓ | ✓ | ✓ | ✓ | — | — | **5** |
 
 ---
 
 ### Key Observations
 
-**IL6 and STAT1 — Dual-method, cross-pathway validated hubs (6/8 pathways each)**
-Both proteins appear in 6 of 8 KEGG pathways and meet all three topology ranking criteria, providing the strongest cross-method evidence in this analysis. IL6 is present across innate (TLR, NLR), adaptive (Th17, IBD), and cytokine-receptor interaction pathways, consistent with its role as a pleiotropic inflammatory mediator. STAT1 bridges innate IFN signalling (TLR, NLR autocrine loop) with adaptive T cell polarisation (Th17, Th1/Th2, IBD), consistent with its dual role as a JAK-STAT effector and IFN-stimulated gene regulator.
+**IL6 and STAT1 — Broadest coverage among topology-supported candidates (6/8 pathways each)**  
+Both are Tier 1 triple-metric candidates and appear in six pathways. IL6 spans IBD, JAK-STAT, TLR, NLR, Th17, and cytokine-receptor interaction; STAT1 spans IBD, JAK-STAT, TLR, NLR, Th17, and Th1/Th2. Their pathway coverage provides cross-method support for their prominence in this network.
 
-**IFNG — Tier 2 topology, 5/8 pathway coverage**
-Despite meeting only two topology ranking criteria, IFNG achieves broader pathway coverage than STAT3 or JAK1, appearing in IBD, JAK-STAT, Th17, Th1/Th2, and Cytokine-Cytokine Receptor interaction. This supports IFNG as a biologically central node whose network influence is distributed across functional modules rather than concentrated in interactome connectivity metrics.
+**IFNG — Tier 2 candidate with broad pathway coverage (5/8)**  
+IFNG appears in IBD, JAK-STAT, Th17, Th1/Th2, and cytokine-receptor interaction, connecting several inflammatory and T-cell-related pathway maps.
 
-**TYK2 — 5/8 pathway coverage, topology anomaly**
-TYK2 appears in 5 of 8 KEGG pathways but carries an unresolved zero-centrality anomaly: betweenness centrality, closeness centrality, average shortest path length, eccentricity, and stress all read as zero in Cytoscape despite a degree of 59. The most likely cause is a directed graph configuration during metric computation. TYK2 is excluded from T1/T2 tier rankings pending verification; its KEGG pathway coverage is reported as independent cross-method evidence of biological relevance, with the topology caveat noted.
+**TYK2 — Pathway coverage with unresolved topology anomaly (5/8)**  
+TYK2 appears in JAK-STAT, TLR, NLR, Th17, and Th1/Th2. The TSV records degree 59 with zero centrality metrics and flags it for verification in Cytoscape. Its pathway coverage should be treated as separate evidence from the unresolved topology result; do not assign it a confirmed Tier 1 or Tier 2 status until the metrics are checked.
 
-**JAK1 and IFNB1 — Innate immunity axis (4/8 pathways each)**
-JAK1 and IFNB1 co-occur in TLR and NLR pathways, consistent with their roles in the autocrine/paracrine IFN signalling loop: TLR/NLR activation → IRF3/IRF7 → IFN-β (IFNB1) → IFNαβR → JAK1/TYK2 → STAT1. This mechanistic co-occurrence supports their joint classification as innate signalling hubs.
+**JAK1 and IFNB1 — Shared innate-signalling pathway membership**  
+JAK1 and IFNB1 both appear in the TLR and NLR maps. This overlap is consistent with their involvement in interferon-associated signalling, although pathway co-occurrence alone does not establish a causal sequence.
 
-**NOD2 — Disease-specific bottleneck (2/8 pathways, high betweenness centrality)**
-NOD2 appears only in the IBD and NLR pathways but has high betweenness centrality (BC = 0.50), identifying it as a critical connector between the
-NOD/NLR innate sensing module and broader inflammatory signalling. Its limited KEGG pathway coverage reflects its specialised role in bacterial pattern recognition rather than broad cytokine biology.
+**NOD2 — IBD/NLR-associated candidate (2/8)**  
+NOD2 appears in the IBD and NLR maps. The TSV describes it as a primary Crohn’s disease-associated gene involved in NLR pattern recognition.
 
-**Autophagy — No hub protein overlap**
-None of the 13 topology-classified hub proteins appear in the Autophagy pathway. The autophagy-highlighted nodes (ATG5, ATG12, ATG16L1) are primary CD associated genes present in the network but did not meet topology hub criteria. This confirms autophagy as a mechanistically distinct arm of CD pathology in this network — driven by primary susceptibility genes rather than network hubs.
+**IL10RA — Restricted pathway coverage (1/8)**  
+IL10RA appears only in Cytokine-Cytokine Receptor Interaction. Its Tier 2 label reflects the supplied topology classification, not broad KEGG pathway coverage.
 
-**IL10RA — Single-pathway (Cytokine-Cytokine Receptor only)**
-IL10RA qualifies by dual topology criteria but appears in only one KEGG pathway. Its hub status reflects receptor-level connectivity in the PPI network rather than pathway centrality, and should be reported with that caveat.
-
----
-
-### Pathway-prominent non-hub proteins
-
-RELA and IL12B did not meet topology ranking criteria for T1 or T2 hub classification and are excluded from the hub matrix above. They are retained in KEGG pathway mapping results and the pathway crosstalk diagram as pathway members, not as network hubs.
-
-| Protein | KEGG pathways | Count | Note |
-|---|---|:---:|---|
-| RELA | IBD, TLR, NLR, Th17, Th1/Th2 | 5 | NF-κB p65; broad downstream effector role; not topology-supported as hub |
-| IL12B | IBD, TLR, Th1/Th2 | 3 | IL-12p40; Th1 polarisation and TLR output; not topology-supported as hub |
-
-These proteins should not be described as network hubs or topology-derived hub candidates in any reporting derived from this analysis.
+**Autophagy — No listed protein overlap**  
+None of the proteins in the TSV are marked present in the Autophagy – Animal map. This describes the cross-reference results only; it does not establish that autophagy is absent from Crohn’s disease biology or from the wider network.
 
 ---
 
 ### Pathway Coverage Summary
 
-| Pathway | Hub proteins present | Count |
-|---|---|:---:|
-| Inflammatory Bowel Disease | IL6, STAT1, STAT3, IL4, IFNG, IL13, IL10, IL18, NOD2 | 9 |
-| JAK-STAT Signaling | IL6, STAT1, STAT3, JAK1, IFNG, IL10, IFNB1, TYK2 | 8 |
-| Toll-like Receptor | IL6, STAT1, JAK1, IFNB1, TYK2 | 5 |
-| NOD-like Receptor | IL6, STAT1, JAK1, IFNB1, NOD2, IL18, TYK2 | 7 |
-| Th17 Cell Differentiation | IL6, STAT1, STAT3, IL4, IFNG, IL22, TYK2 | 7 |
-| Th1/Th2 Cell Differentiation | STAT1, JAK1, IL4, IFNG, IL13, TYK2 | 6 |
-| Cytokine-Cytokine Receptor | IL6, IL4, IL13, IL10, IL10RA, IL22, IFNG, IFNB1, IL18 | 9 |
-| Autophagy – Animal | *(none)* | 0 |
+The counts below include all proteins listed in the TSV, including RELA and IL12B (Tier 3 – KEGG only) and TYK2 (Anomaly – verify).
 
-*RELA (5 pathways) and IL12B (3 pathways) are present in KEGG pathway maps as non-hub members; their pathway membership is documented in the section above.*
+| Pathway | Proteins marked present | Count |
+|---|---|:---:|
+| Inflammatory Bowel Disease | IL6, STAT1, STAT3, IL4, IFNG, IL13, IL10, NOD2, IL18, RELA, IL12B | 11 |
+| JAK-STAT Signaling | IL6, STAT1, STAT3, JAK1, IFNG, IL10, IFNB1, TYK2 | 8 |
+| Toll-like Receptor | IL6, STAT1, JAK1, IFNB1, RELA, IL12B, TYK2 | 7 |
+| NOD-like Receptor | IL6, STAT1, JAK1, IFNB1, NOD2, IL18, RELA, TYK2 | 8 |
+| Th17 Cell Differentiation | IL6, STAT1, STAT3, IL4, IFNG, IL22, RELA, TYK2 | 8 |
+| Th1/Th2 Cell Differentiation | STAT1, JAK1, IL4, IFNG, IL13, RELA, IL12B, TYK2 | 8 |
+| Cytokine-Cytokine Receptor | IL6, IL4, IFNG, IL13, IL22, IL10, IFNB1, IL18, IL10RA | 9 |
+| Autophagy – Animal | *(none)* | 0 |
 
 ---
 
 ### Discussion
 
-Cross-referencing the 13 topology-classified hub proteins against eight KEGG pathway maps confirmed differential pathway coverage consistent with their centrality profiles. IL6 and STAT1, both Tier 1 triple-metric hubs, each appeared in 6 of 8 pathways — the broadest coverage of any hub — providing cross method validation of their central role in the Crohn's disease-associated network. IFNG, despite meeting only dual topology criteria, showed the second widest coverage at 5 pathways, spanning innate IFN signalling, T helper cell differentiation, and cytokine-receptor interaction, suggesting that its network influence is distributed across functional modules rather than reflected in raw connectivity. JAK1 and IFNB1 co-occurred specifically within the TLR and NLR innate signalling arms, consistent with their role in the autocrine IFN-β/JAK1/STAT1 amplification loop downstream of pattern recognition receptor activation. TYK2 also appeared in 5 pathways but carries an unresolved centrality anomaly in Cytoscape; its topology tier remains uncertain pending verification, and its pathway coverage is reported as independent cross-method evidence of biological relevance. NOD2, a primary Crohn's disease susceptibility gene, appeared in only the IBD and NLR pathways but exhibited high betweenness centrality, consistent with its role as a connector between the innate sensing module and downstream inflammatory signalling. Notably, no hub protein was present in the Autophagy pathway; autophagy-associated nodes (ATG5, ATG12, ATG16L1) are primary CD-associated genes in the network but did not meet topology hub criteria, indicating that the autophagy arm of Crohn's disease pathology operates through a mechanistically distinct module within this interactome.
+The TSV cross-reference shows differential pathway coverage across the topology-classified proteins. IL6 and STAT1 have the highest coverage among the Tier 1/Tier 2 topology candidates, appearing in six of eight maps each. IFNG and TYK2 each appear in five maps, but their interpretation differs: IFNG is Tier 2, whereas TYK2 remains an unresolved topology anomaly because its degree is 59 while its centrality metrics are reported as zero. JAK1 and IFNB1 share TLR and NLR pathway membership. NOD2 appears in IBD and NLR maps, while IL10RA appears only in the cytokine-receptor interaction map. RELA and IL12B are included in the TSV as Tier 3 – KEGG only, with five and three pathway matches respectively; they should not be represented as topology-supported hubs. No listed protein is marked present in the autophagy map. These observations describe the supplied cross-reference and should not be interpreted as independent experimental validation or proof of pathway causality.
