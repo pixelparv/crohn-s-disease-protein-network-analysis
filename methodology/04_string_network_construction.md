@@ -51,12 +51,12 @@ STRING edges represent protein associations that may combine evidence from co-ex
 
 ## Reproducibility checklist
 
-- [ ] Record the 77 exact query identifiers and confirm their derivation
-      (13 primary genes + unique IntAct partners).
+- [ ] Record the exact query identifiers and confirm their derivation
+      (primary genes + unique IntAct partners).
 - [ ] Document the iterative node addition steps: number of additions, identities of added nodes, and the stopping criterion (125 proteins reached in this case).
 - [ ] Record retrieval date and STRING version (v12.0).
 - [ ] Document all active evidence channels.
-- [ ] Confirm what the 5% FDR setting was applied to.
+- [ ] Confirm what the FDR setting was applied to.
 - [ ] Preserve the two `.tsv` exports under `data/raw/`.
-- [ ] Identify which primary gene was absent from the connected output.
-- [ ] Document the cause of the 125 → 110 node reduction.
+- [ ] Identify which primary gene was absent from the connected output (if any).
+- [ ] Document the cause of the node reduction (if any).
