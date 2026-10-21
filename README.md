@@ -2,7 +2,7 @@
 
 **Author:** Parv Pranjal Saxena  
 **Institution:** Dev Bhoomi Uttarakhand University, Dehradun, India  
-**Release:** v1.0.0 (2026-10-13)  
+**Release:** v1.0.0 (2026-10-22)  
 **License:** Non-Commercial Use License
 
 ## Overview
@@ -46,13 +46,13 @@ Detailed methods are in [`methodology/`](methodology/); supporting documentation
 - The initial candidate set contains 13 primary genes.
 - The workflow included 77 STRING input identifiers.
 - STRING couldn't connect the node SIAE in the extended network. 
-- The STRING output was reported as 125 proteins, while the Cytoscape network contained 110 nodes. These are distinct workflow-stage counts and should not be treated as interchangeable.
+- The STRING output was reported as 125 proteins, while the Cytoscape network contained 110 nodes. These are counts from different workflow stages and should not be treated as interchangeable.
 - Database contents and enrichment results can change over time. The versions/dates recorded in the methods are historical references from June–July 2026, not a claim that every tool version was independently verified at execution time.
 - Results are hypothesis-generating. Evidence quality, identifier mapping, database coverage, selection thresholds, and network construction can influence the findings.
 
 ## Reproducibility
 
-This repository documents the analysis choices and expected inputs/outputs. Where source data exports, Cytoscape sessions, or result tables are included, consult the relevant directory README for provenance and limitations. Do not infer that a file is present merely because a workflow describes it.
+This repository documents the analysis choices and expected inputs/outputs. Where source data exports, Cytoscape sessions, or result tables are included, consult the relevant directory README for provenance and limitations. Do not assume a file exists merely because a workflow describes it.
 
 ## Contributing
 
