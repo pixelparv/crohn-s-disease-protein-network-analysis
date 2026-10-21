@@ -9,7 +9,7 @@ Identify pathways statistically over-represented among the submitted network pro
 | Parameter | Value |
 |---|---|
 | Organism | *Homo sapiens* |
-| Analysis date | 17 June 2026 |
+| Analysis date | 18 June 2026 |
 | Reactome version | 96 |
 | Submitted identifiers | 110 gene names (from the Cytoscape network node table) |
 | Mapped identifiers | 100 / 110 (90.9%) |
@@ -30,15 +30,15 @@ The most statistically significant pathways from the Reactome report included im
 
 - Interleukin-20 family signaling
 - Interleukin-6 signaling
+- Interleukin-6 family signaling
 - Interleukin-12 family signaling
 - Interleukin-4 and Interleukin-13 signaling
-- Interleukin-6 family signaling
 
 These results provide functional context for interpreting the protein interaction network, particularly its immune regulation, cytokine signaling, and interferon response components.
 
 ## Output
 
-The Reactome analysis produced a PDF report containing pathway names, entity counts, enrichment statistics, p-values, and FDR-adjusted values. This report is stored at `4_report/reactome_enrichment_report.pdf`. Do not reconstruct p-values or FDR values from visual inspection of the report; use the original export file.
+The Reactome analysis produced a PDF report containing pathway names, entity counts, enrichment statistics, p-values, and FDR-adjusted values. This report is stored at `report/reactome_enrichment_report.pdf`. Do not reconstruct p-values or FDR values from visual inspection of the report; use the original export file.
 
 ## Interpretation
 
