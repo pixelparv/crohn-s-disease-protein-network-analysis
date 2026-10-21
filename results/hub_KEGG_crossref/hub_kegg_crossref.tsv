@@ -12,6 +12,4 @@ IFNB1	Tier 2 - Dual metric	NO	YES	YES	YES	NO	NO	YES	NO	4	Type I IFN; innate anti
 NOD2	Tier 2 - Dual metric	YES	NO	NO	YES	NO	NO	NO	NO	2	Primary CD gene; NLR pattern recognition; IBD macrophage section
 IL18	Tier 2 - Dual metric	YES	NO	NO	YES	NO	NO	YES	NO	3	Inflammasome product (NLRP3); bridges innate-adaptive
 IL10RA	Tier 2 - Dual metric	NO	NO	NO	NO	NO	NO	YES	NO	1	IL-10 receptor alpha; cytokine-receptor interaction only
-RELA	Tier 3 - KEGG only	YES	NO	YES	YES	YES	YES	NO	NO	5	NF-kB; regulatory hub across innate pathways; not topology-prominent
-IL12B	Tier 3 - KEGG only	YES	NO	YES	NO	NO	YES	NO	NO	3	IL-12p40; Th1 polarisation; TLR output and Th1/Th2 axis
 TYK2	Anomaly - verify	NO	YES	YES	YES	YES	YES	NO	NO	5	High degree (59) but zero centrality metrics; verify in Cytoscape
