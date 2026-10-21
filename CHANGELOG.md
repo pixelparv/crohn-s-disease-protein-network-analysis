@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.0] - 2026-10-14
+## [1.0.0] - 2026-10-21
 
 - Initial public documentation release.
 - Documented the literature-to-crosstalk workflow: PubMed, UniProt, IntAct, STRING, Cytoscape, Reactome, KEGG and Microsoft PowerPoint.
