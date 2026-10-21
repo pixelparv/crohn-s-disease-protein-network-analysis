@@ -1,0 +1,17 @@
+Hub Protein	Tier	IBD	JAK-STAT	Toll-like Receptor	NOD-like Receptor	Th17	Th1/Th2	Cytokine-Cytokine R	Autophagy	Pathway Count	Notes
+IL6	Tier 1 - Triple metric	YES	YES	YES	YES	YES	NO	YES	NO	6	Top hub; appears across innate + adaptive + cytokine pathways
+STAT1	Tier 1 - Triple metric	YES	YES	YES	YES	YES	YES	NO	NO	6	Co-equal with IL6; innate IFN signalling and T cell polarisation
+STAT3	Tier 1 - Triple metric	YES	YES	NO	NO	YES	NO	NO	NO	3	JAK-STAT and Th17 axis; downstream of IL-6 signalling
+JAK1	Tier 1 - Triple metric	NO	YES	YES	YES	NO	YES	NO	NO	4	Kinase hub; TLR autocrine IFN loop + NLR antiviral arm
+IL4	Tier 1 - Triple metric	YES	NO	NO	NO	YES	YES	YES	NO	4	Th2 master cytokine; inhibits Th17, promotes Th2 differentiation
+IFNG	Tier 2 - Dual metric	YES	YES	NO	NO	YES	YES	YES	NO	5	IFN-gamma; Th1 effector; cross-pathway from adaptive to innate
+IL13	Tier 2 - Dual metric	YES	NO	NO	NO	NO	YES	YES	NO	3	Th2 effector; IL-4/IL-13 axis; Ulcerative colitis link
+IL22	Tier 2 - Dual metric	NO	NO	NO	NO	YES	NO	YES	NO	2	Mucosal/epithelial barrier cytokine; Th17 output
+IL10	Tier 2 - Dual metric	YES	YES	NO	NO	NO	NO	YES	NO	3	Anti-inflammatory master regulator; IBD inhibition and JAK-STAT
+IFNB1	Tier 2 - Dual metric	NO	YES	YES	YES	NO	NO	YES	NO	4	Type I IFN; innate antiviral; TLR and NLR terminal output
+NOD2	Tier 2 - Dual metric	YES	NO	NO	YES	NO	NO	NO	NO	2	Primary CD gene; NLR pattern recognition; IBD macrophage section
+IL18	Tier 2 - Dual metric	YES	NO	NO	YES	NO	NO	YES	NO	3	Inflammasome product (NLRP3); bridges innate-adaptive
+IL10RA	Tier 2 - Dual metric	NO	NO	NO	NO	NO	NO	YES	NO	1	IL-10 receptor alpha; cytokine-receptor interaction only
+RELA	Tier 3 - KEGG only	YES	NO	YES	YES	YES	YES	NO	NO	5	NF-kB; regulatory hub across innate pathways; not topology-prominent
+IL12B	Tier 3 - KEGG only	YES	NO	YES	NO	NO	YES	NO	NO	3	IL-12p40; Th1 polarisation; TLR output and Th1/Th2 axis
+TYK2	Anomaly - verify	NO	YES	YES	YES	YES	YES	NO	NO	5	High degree (59) but zero centrality metrics; verify in Cytoscape
