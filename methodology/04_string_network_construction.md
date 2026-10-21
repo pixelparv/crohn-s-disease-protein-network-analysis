@@ -38,7 +38,7 @@ The gene SIAE remained absent from the connected output after iterative node add
 
 ## Note on iterative node addition
 
-Starting from the 77 submitted identifiers, STRING initially connected a subset. Additional proteins were added iteratively using STRING's "more" option to bridge gaps in the network until 125 proteins were reached. Proteins in the extended network beyond the original 77 inputs are STRING-added bridge nodes; they are visually distinct from the query proteins in the STRING interface (query proteins and their first-layer interactors shown in red; second-layer added nodes shown in white).
+Starting from the 77 submitted identifiers, STRING initially connected a subset. Additional proteins were added iteratively using STRING's "more" option to bridge gaps in the network until 125 proteins were reached. Proteins in the extended network beyond the original 77 inputs are STRING-added bridge nodes; they are visually distinct from the query proteins in the STRING interface (query proteins and their first-layer interactors shown in red; second-layer added nodes shown in different colours as mentioned by STRING).
 
 ## Note on output count versus Cytoscape node count
 
