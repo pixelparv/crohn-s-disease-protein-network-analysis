@@ -53,7 +53,7 @@ STRING edges represent protein associations that may combine evidence from co-ex
 
 - [ ] Record the 77 exact query identifiers and confirm their derivation
       (13 primary genes + unique IntAct partners).
-- [ ] Document the iterative node addition steps: number of additions, identities of added nodes, and the stopping criterion (125 proteins reached).
+- [ ] Document the iterative node addition steps: number of additions, identities of added nodes, and the stopping criterion (125 proteins reached in this case).
 - [ ] Record retrieval date and STRING version (v12.0).
 - [ ] Document all active evidence channels.
 - [ ] Confirm what the 5% FDR setting was applied to.
