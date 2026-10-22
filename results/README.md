@@ -10,7 +10,7 @@ Output artefacts from the Crohn's disease protein-protein interaction network an
 
 | File | Description |
 |------|-------------|
-| `cytoscape_hub_proteins_table.tsv` | Tabular export of hub proteins identified by topological filtering. Columns include gene symbol, UniProt ID, and the centrality metrics used for hub classification. |
+| `cytoscape_hub_proteins_table.tsv` | Tabular export of hub proteins identified by topological filtering. Columns include gene symbol and the centrality metrics used for hub classification. |
 | `cytoscape_session.cys` | Native Cytoscape session file. Open in Cytoscape ≥ 3.9 to restore the full network with visual styles, edge weights, and node groupings intact. |
 | `cytoscape_topology_scores.csv` | Network topology scores for all nodes: degree, betweenness centrality, closeness centrality, and clustering coefficient. Used as the basis for hub protein selection. |
 
@@ -30,13 +30,13 @@ Output artefacts from the Crohn's disease protein-protein interaction network an
 
 | File | Description |
 |------|-------------|
-| `hub_kegg_crossref.tsv` | Cross-reference table mapping hub proteins to their KEGG pathway memberships. Enables comparison of Reactome ORA results against KEGG annotations for the same hub set. |
+| `hub_kegg_crossref.tsv` | Cross-reference table mapping Cytoscape hub proteins and KEGG pathway memberships. Enables combination of Cytoscape topological analysis results with KEGG annotations to identify the hub set. |
 
 ---
 
 ## Reproduction Notes
 
 - Network topology scores were computed in Cytoscape using the **NetworkAnalyzer** plugin.  
-- Hub proteins were defined by degree and betweenness centrality thresholds (see `methods/` or dissertation text for exact cut-offs).  
+- Hub proteins were defined by degree and betweenness centrality thresholds (see `methods/` for exact cut-offs).  
 - Reactome ORA was run via the Reactome Analysis Service (https://reactome.org/analyse) against the *Homo sapiens* reference proteome.  
 - KEGG cross-referencing was performed using the KEGG REST API; pathway assignments reflect the database state at the time of analysis (see `logs/` for date stamps if available).
