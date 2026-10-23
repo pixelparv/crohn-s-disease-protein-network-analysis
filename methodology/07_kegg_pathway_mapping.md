@@ -6,7 +6,7 @@ To locate the target genes within their respective KEGG pathways and identify th
 
 ## Approach
 
-Target/network genes were mapped to KEGG pathways. Identified hit genes were highlighted distinctly from other genes in the pathway networks to distinguish the genes of interest.
+Target/network genes were mapped to KEGG pathways directed to hsa (_Homo_ _sapiens_) using KEGG Mapper's 'Color' tool. Identified hit genes were highlighted distinctly from other genes in the pathway networks to distinguish the experimental genes of interest.
 
 ## Interpretation
 
