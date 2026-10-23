@@ -7,7 +7,7 @@
 
 ## Overview
 
-This repository documents an in-silico workflow for exploring protein–protein interaction networks associated with Crohn’s disease. It combines literature-supported candidate genes, interaction databases, network analysis, and pathway enrichment/mapping.
+This repository documents an in-silico workflow for exploring protein–protein interaction networks associated with Crohn’s disease. It combines literature-supported candidate genes, interaction databases, network analysis, pathway enrichment/mapping, and pathway crosstalk.
 
 This is a computational validation and exploratory analysis. Network associations and pathway enrichment do **not** establish causality, clinical relevance, or a validated disease mechanism.
 
@@ -20,7 +20,7 @@ This is a computational validation and exploratory analysis. Network association
 5. Inspect and analyse the network in Cytoscape, including topology metrics and a yFiles Organic layout.
 6. Perform pathway over-representation analysis with Reactome.
 7. Map genes to KEGG pathways and examine pathway overlap.
-8. Construct manual flowchart in MS PowerPoint to highlight hub proteins in a pathway-crosstalk.
+8. Construct a manual flowchart in MS PowerPoint to highlight hub proteins in a pathway-crosstalk.
 
 Detailed methods are in [`methodology/`](methodology/); supporting documentation is in [`docs/`](docs/).
 
