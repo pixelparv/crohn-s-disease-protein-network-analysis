@@ -1,7 +1,7 @@
 # 3. IntAct Interaction Filtering
 
-*Retrieval date:* 14 June 2026
-*Query terms:* Primary gene names
+# Retrieval date: 14 June 2026
+# Query terms: Primary gene names
 
 ## Purpose
 
