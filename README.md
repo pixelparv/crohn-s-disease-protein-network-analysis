@@ -7,13 +7,13 @@
 
 ## Overview
 
-This repository documents an in-silico workflow for exploring protein–protein interaction networks associated with Crohn’s disease. It combines literature-supported candidate genes, interaction databases, network analysis, pathway enrichment/mapping, and pathway crosstalk.
+This repository documents an in-silico workflow for exploring protein association networks and pathway membership associated with Crohn’s disease. It combines literature-supported candidate genes, interaction databases, network analysis, pathway enrichment/mapping, and pathway crosstalk.
 
 This is a computational validation and exploratory analysis. Network associations and pathway enrichment do **not** establish causality, clinical relevance, or a validated disease mechanism.
 
 ## Workflow
 
-1. Identify Crohn’s disease-associated candidate genes from the literature.
+1. Identify Crohn’s disease-associated candidate genes via a PubMed literature search.
 2. Map gene names to UniProt identifiers.
 3. Retrieve high-confidence interactions from IntAct, retaining up to five interactions per primary gene at a minimum MI score of 0.65.
 4. Expand and filter the network using STRING (confidence score 0.400; 5% FDR setting where applicable).
