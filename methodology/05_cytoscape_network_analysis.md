@@ -22,17 +22,19 @@ The following metrics were calculated using Cytoscape's built-in Network Analyze
 
 | Metric | Definition |
 |---|---|
-| Degree | Number of edges directly connected to a node |
-| Betweenness centrality (BC) | Fraction of shortest paths between all node pairs that pass through a given node |
-| Stress centrality | Total number of shortest paths passing through a node (unnormalized betweenness) |
-| Closeness centrality | Reciprocal of the average shortest path length from a node to all other nodes |
-| Clustering coefficient | Probability that a node's neighbours are also connected to each other |
-| Eccentricity | Greatest distance from a node to any other node in the network |
-| Average shortest path length | Mean number of steps across all shortest paths from a node to all reachable nodes |
-| Neighbourhood connectivity | Average degree of a node's immediate neighbours |
-| Radiality | Reachability of a node relative to the network diameter |
-| Topological coefficient | Tendency of a node to share neighbours with other nodes |
-| Number of undirected edges | Total undirected connections associated with a node |
+| Average Shortest Path Length | Mean shortest path length across all node pairs |
+| Betweenness Centrality | Fraction of all pairwise shortest paths passing through a node; marks bottlenecks | 
+| Closeness Centrality | Reciprocal of mean shortest path distance to all other nodes; higher = more central | 
+| Clustering Coefficient | Proportion of a node's neighbours that are mutually connected; measures local density | 
+| Degree | Total edges incident to a node (indegree + outdegree in directed networks) | 
+| Eccentricity | Maximum shortest path length from a node to any other node | 
+| Edge Count | Total edges at a node (local) or in the network (global) | 
+| Indegree | Number of edges directed *into* a node | 
+| Neighbourhood Connectivity | Mean degree of a node's immediate neighbours | 
+| Number of Undirected Edges | Count of unique node pairs connected by an edge, ignoring direction | 
+| Outdegree | Number of edges directed *out of* a node | 
+| Radiality | Normalised measure of how easily a node reaches all others relative to network diameter; higher = more globally accessible | 
+| Topological Coefficient | Extent to which a node shares neighbours with its neighbours; higher = embedded in overlapping modules | 
 
 The network was treated as **directed** for topology calculations. 
 
@@ -79,8 +81,8 @@ Both proteins should be described as pathway members in the KEGG results, not as
 ## Reproducibility checklist
 
 - [ ] Record Cytoscape version (3.9.0) and NetworkAnalyzer settings.
-- [ ] Document what caused the 125 → 110 node reduction.
+- [ ] Document what caused the node reduction, if any (125 → 110 in this case).
 - [ ] Confirm whether the network was treated as directed or undirected for all metric calculations.
-- [ ] Preserve the Cytoscape session file (`.cys`) and exported node/edge tables (`.tsv`).
-- [ ] Resolve and document the TYK2 centrality anomaly before final submission.
+- [ ] Preserve the Cytoscape session file (`.cys`), topology scores (`.csv`), and exported node/edge tables (`.tsv`).
+- [ ] Resolve and document any anomaly before final submission (the TYK2 centrality in this case).
 - [ ] Record the centrality distributions used as the basis for T1/T2 ranking criteria (e.g., export the full node table showing all metric values).
