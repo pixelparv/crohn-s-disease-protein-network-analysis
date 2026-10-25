@@ -18,7 +18,7 @@ Output artefacts from the Crohn's disease protein-protein interaction network an
 
 | File | Description |
 |------|-------------|
-| `potential_pathway_crosstalk.pptx` | Presentation-ready figure illustrating functional overlap and cross-talk among the top enriched pathways, annotated with shared hub proteins at pathway intersections. |
+| `potential_pathway_crosstalk.pptx` | Microsoft PowerPoint Presentation illustrating functional overlap and cross-talk among the top enriched pathways, annotated with shared hub proteins at pathway intersections. |
 
 ### `reactome_pathway_enrichment/`
 
@@ -39,4 +39,4 @@ Output artefacts from the Crohn's disease protein-protein interaction network an
 - Network topology scores were computed in Cytoscape using the **NetworkAnalyzer** plugin.  
 - Hub proteins were defined by degree and betweenness centrality thresholds (see `methods/` for exact cut-offs).  
 - Reactome ORA was run via the Reactome Analysis Service (https://reactome.org/analyse) against the *Homo sapiens* reference proteome.  
-- KEGG cross-referencing was performed using the KEGG REST API; pathway assignments reflect the database state at the time of analysis (see `logs/` for date stamps if available).
+- KEGG cross-referencing was performed using the KEGG Color, towards "hsa"; pathway assignments reflect the database state at the time of analysis.
