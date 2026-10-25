@@ -9,7 +9,7 @@ Identify pathways statistically over-represented among the submitted network pro
 | Parameter | Value |
 |---|---|
 | Organism | *Homo sapiens* |
-| Analysis date | 18 June 2026 |
+| Analysis date | 17 June 2026 |
 | Reactome version | 96 |
 | Submitted identifiers | 110 gene names (from the Cytoscape network node table) |
 | Mapped identifiers | 100 / 110 (90.9%) |
