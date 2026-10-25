@@ -43,7 +43,6 @@ Starting from the 77 submitted identifiers, STRING initially connected a subset.
 ## Note on output count versus Cytoscape node count
 
 The STRING export reported 125 proteins. The Cytoscape network subsequently contained 110 nodes. These counts belong to different workflow stages and must not be treated as equivalent. The 15-node reduction likely reflects the removal of disconnected or low-confidence nodes during STRING export filtering or Cytoscape import, but the exact cause has not been confirmed from source files.
-See `results/README.md` for reconciliation requirements.
 
 ## Interpretation
 
@@ -51,12 +50,11 @@ STRING edges represent protein associations that may combine evidence from co-ex
 
 ## Reproducibility checklist
 
-- [ ] Record the exact query identifiers and confirm their derivation
-      (primary genes + unique IntAct partners).
-- [ ] Document the iterative node addition steps: number of additions, identities of added nodes, and the stopping criterion (125 proteins reached in this case).
+- [ ] Record the exact query identifiers and confirm their derivation (primary genes + unique IntAct partners).
+- [ ] Document the iterative node addition steps: number of additions, identities of added nodes, and the stopping                criterion (125 proteins reached in this case).
 - [ ] Record retrieval date and STRING version (v12.0).
 - [ ] Document all active evidence channels.
 - [ ] Confirm what the FDR setting was applied to.
-- [ ] Preserve the two `.tsv` exports under `data/raw/`.
+- [ ] Preserve the two `.tsv` exports under `data/secondary/`.
 - [ ] Identify which primary gene was absent from the connected output (if any).
 - [ ] Document the cause of the node reduction (if any).
