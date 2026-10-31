@@ -2,7 +2,7 @@
 
 1. Source databases: PubMed, UniProt and IntAct.
 2. Retrieval date: 13 June 2026
-3. File name and format: 13_primary_genes.txt and 77_binary_interaction_genes.txt
+3. File names and format: 13_primary_genes.txt and 77_binary_interaction_genes.txt
 4. Identifier type: UniProt identifiers.
 5. Filters: _Homo Sapiens_.
 6. Citation: Refer to "methodology/01_pubmed_literature_review.md".
