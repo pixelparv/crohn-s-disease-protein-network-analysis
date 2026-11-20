@@ -3,6 +3,5 @@
 1. Source databases: PubMed, UniProt and IntAct.
 2. Retrieval date: 13 June 2026
 3. Identifier type: UniProt identifiers.
-4. 
-5. Filters: Species, _Homo Sapiens_.
-6. Citation: Refer to "methodology/01_pubmed_literature_review.md".
+4. Filters: Species, _Homo Sapiens_.
+5. Citation: Refer to "methodology/01_pubmed_literature_review.md".
