@@ -8,7 +8,6 @@ Record the following for every data file that is added:
 
 - Source database and exact query or access route.
 - Retrieval date.
-- File name and format.
 - Identifier type and species, where relevant.
 - Filters or transformations applied.
 - Citation or source URL.
