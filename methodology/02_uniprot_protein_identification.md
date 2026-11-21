@@ -8,6 +8,8 @@ Map candidate gene symbols to stable protein identifiers for interaction retriev
 
 Candidate gene names were mapped to UniProt identifiers. The workflow recorded UniProt IDs for the 13 primary genes and used mapped identifiers in downstream interaction analysis.
 
+**Mapping date:** 13 June 2026.
+
 ## Quality control
 
 - Confirm organism/species for every mapping.
