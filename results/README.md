@@ -16,7 +16,8 @@ results/
 │   └── potential_pathway_crosstalk.pptx
 ├── reactome_pathway_enrichment/
 │   └── reactome_pathway_enrichment.csv
-├── hub_kegg_crossref.tsv
+├── hub_kegg_crossref
+    └──hub_kegg_crossref.tsv
 └── README.md
 ```
 
