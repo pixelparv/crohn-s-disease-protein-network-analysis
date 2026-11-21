@@ -11,7 +11,7 @@
 
 ## Overview
 
-An in-silico workflow exploring protein association networks and pathway membership associated with Crohn's disease. The analysis integrates literature derived candidate genes, molecular interaction databases, network topology, pathway enrichment, and pathway crosstalk visualisation.
+An in silico workflow exploring protein association networks and pathway membership associated with Crohn's disease. The analysis integrates literature-derived candidate genes, molecular interaction databases, network topology, pathway enrichment, and potential pathway crosstalk visualisation.
 
 **This is a hypothesis-generating computational analysis.** Network associations and pathway enrichment do not establish causality, clinical relevance, or a validated disease mechanism.
 
@@ -65,7 +65,7 @@ Detailed methods are in [`methodology/`](methodology/); supporting documentation
 - 13 primary genes → 77 unique STRING inputs (primary genes + unique IntAct partners)
 - STRING output: 125 proteins, 1,621 edges; 12/13 primary genes connected (SIAE absent)
 - Cytoscape working network: 110 nodes (15-node reduction from STRING export; cause
-  unconfirmed — reconcile before final submission)
+  unconfirmed — most likely the removal of disconnected nodes or low-confidence entries).
 
 **Hub classification (Cytoscape NetworkAnalyzer — directed network)**
 
@@ -74,7 +74,7 @@ Detailed methods are in [`methodology/`](methodology/); supporting documentation
 | T1 — Triple-metric (Degree, Betweenness, Stress) | IL6, STAT1, STAT3, JAK1, IL4 |
 | T2 — Dual-metric | IFNG, NOD2, IL13, IL22, IL10, IFNB1, IL18, IL10RA |
 | T3 — KEGG pathway only (not topology hubs) | RELA, IL12B |
-| Anomaly — verify | TYK2 (degree 59; betweenness, closeness, stress all zero) |
+| Anomaly — to verify | TYK2 (degree 59; betweenness, closeness, stress all zero) |
 
 **Reactome enrichment (top pathways)**  
 Interleukin-20 family signalling · IL-6 signalling · IL-6 family signalling ·
