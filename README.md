@@ -4,7 +4,7 @@
 
 **Author:** Parv Pranjal Saxena  
 **Institution:** Dev Bhoomi Uttarakhand University, Dehradun, India  
-**Release:** v1.0.0 — 2026-10-25  
+**Release:** v1.0.0 — 2026-11-22  
 **License:** Non-Commercial Use License
 
 ---
