@@ -1,6 +1,6 @@
 # Data
 
-This directory is intended for input data, identifier mappings, and source-database exports used by the workflow.
+This directory is intended for input data, identifier mappings, and source-database exports used in the workflow.
 
 ## Provenance
 
